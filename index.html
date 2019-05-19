@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Rock Paper Scissors | Games </title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/layout.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row header" style="padding: 15px; margin: 15px;">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h1> Rock Paper Scissors </h1>
+            </div>
+        </div>
+        <div class="row border border-warning" style="padding: 15px; margin: 15px;">
+            <div class="col-lg-2 col-md-2 col-sm-2"></div>
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <img src="./img/rock.png" alt="Rock" class="rounded-circle" style="width: 75%; cursor: pointer;" onclick="clickAction('rock')">
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1"></div>
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <img src="./img/paper.png" alt="Paper" class="rounded-circle" style="width: 75%; cursor: pointer;" onclick="clickAction('paper')">
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1"></div>
+            <div class="col-lg-2 col-md-2 col-sm-2">
+                <img src="./img/scissors.jpg" alt="Scissors" class="rounded-circle" style="width: 75%; cursor: pointer;" onclick="clickAction('scissors')">
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2"></div>
+        </div>   
+        <div class="row" style="padding: 15px; margin: 15px;">
+            <div class="col-lg-5 col-md-5 col-sm-5">
+                <button class="btn btn-primary" onclick="resetScore()"> Reset </button>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 border border-primary" style="padding: 15px;">
+                <h2 id="textScore">
+                    0 : 0   
+                </h2>
+                <b> User : Computer </b>
+                <hr>
+                <strong> Result: <span id="textResult"></span> </strong>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-5 border border-primary" style="padding: 15px;">
+                <h3> Answer of Computer </h3>
+                <img id="showAnswer" src="./img/Start.png" alt="Answer" class="rounded-circle" style="width: 25%;">
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/control.js"></script>
+</body>
+</html>
